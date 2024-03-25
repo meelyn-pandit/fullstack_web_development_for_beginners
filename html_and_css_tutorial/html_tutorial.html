@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>My HTML tutorial</title>
+        <!--Favicon is the icon on the webpage, must be defined in head element-->
+        <link rel="icon" href="https://cdn4.iconfinder.com/data/icons/logos-brands-5/24/freecodecamp-512.png">
+
+        <!--setting up stylesheet so all css styles are linked to style.css-->
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    </head>
+    <body>
+        Hello World!
+        <h1 id="welcome">This is a new paragraph</h1>
+        <h2 class="heading">Second heading</h2>
+        <b>
+            <h3>Third heading</h3>
+            <p title="test" class="heading">This is the test paragraph,<br>
+            this is a new line </p>
+        </b>
+        
+
+        <pre>This is a second paragraph using the pre element
+            <hr>
+            line break without the br element
+            <hr>
+            another line break
+            <hr>
+            and another
+            <hr>
+            and another
+        </pre>
+        Creating a link: <a href="https://www.google.com">Click this link</a>
+        <i class="material-icons">cloud</i>
+        <i class="material-icons">computer</i>
+        <i class="material-icons">traffic</i>
+
+
+        <!-- <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQgByBT5IiAT_a2x9pUVb4VMoOrlzHH7Jrzj-HB5jzHlR4lNLMS" height="200" width="200" alt="this image contains a dog">
+        <script src="script.js"></script> -->
+
+        <hr>
+        <h3>Formatting elements</h3>
+        <p>Creating bold, italics, super/subscript text</p>
+        <pre>
+            <b>This is bold text</b>
+
+            <strong>This is bold textusing strong</strong>
+
+            <em>Emphasized</em>
+
+            <i>Italics</i>
+
+            Mark this <mark>Marked, highlights text</mark>
+
+                Don't do this: <del>Do it, creates a strikethrough</del>
+            
+            Underlined: <ins>inserted</ins>
+
+            Small text: <small>this is quite small</small>
+
+            Subscript: O<sub>2</sub>
+
+            Superscript: 7<sup>3</sup>
+        </pre>
+        <h3>HTML colors</h3>
+        <pre>
+            <h4 style="color:blue; background-color:red">HTML Styling</h4>
+        </pre>
+
+        <!-- This is how you comment code in HTML -->
+        <h3>Creating Links</h3>
+        <a href="https://google.com" target="_blank">Go to google without automatically switching to that tab</a><br>
+        <br>
+        <a href="'mailto:meelyn.pandit@gmail.com">Send me an email (doesn't work because running on local server)</a>
+
+        <h3>Titled and Favicon (go back to head element)</h3>
+
+        <h3>Tables</h3>
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Class</th>
+            </tr>
+            <tr>
+                <td>Tomi</td>
+                <td>19</td>
+                <td>Year 12</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>30</td>
+                <td>Year 15</td>
+            </tr>
+        </table>
+        <h3>Lists</h3>
+            <p>Unordered list</p>
+            <ul>
+                <li>Name 1</li>
+                <li>Name 2</li>
+                <li>Name 3</li>
+            </ul>
+            <p>Ordered List</p>
+                <ol>
+                    <li>Name 1</li>
+                    <li>Name 2</li>
+                    <li>Name 3</li>
+                </ol>
+        <p>Description list</p>
+        <dl>
+            <dt>Name 1</dt>
+            <dd>*This is the first name</dd>
+            <dt>Name 2</dt>
+            <dd>*This is the second name</dd>
+        </dl>
+        <h3>Block and Inline Elements</h3>
+        <!--DIV is an example of a block element-->
+        <div style="color: green; background-color: blue;">
+            <h1>First div - can add specific class or id to it, separate sections of code and apply specific attributes to those sections</h1>
+            <b>This is bold</b>
+        </div>
+        <div style="color: red; background-color: purple;">
+            <h2>Another one, starts on a new line because in separate div tag</h2>
+            <b>Hi</b>
+        </div>
+
+        <h3>Iframes - used to show a webpage inside a webpage</h3>
+        <iframe src="https://google.com" height="100" width="100"></iframe>
+
+        <h3>Symbols - need the symbol name between & and ;</h3>
+        <p>This is euro sign &euro;</p>
+        <p>This is a copyright sign &#169;</p>
+        <p>This is a registered sign &#174;</p>
+        <p>This is a spade sign &#9824;</p>
+        <p>This is a heart sign &#9829;</p>
+        <p>This is the diamond sign &#9830;</p>
+        <p>This is the trademark sign &#8482;</p>
+
+        <h3>Forms - </h3>
+        <form action="form.html" method="GET"> <!--action attribute tells you where to send form-->
+            <!--get method shows all info in url, post does not-->
+            <label for="username">Tomi</label><br> <!--br tag moves input box below label
+            the for attribute makes the label for the username input-->
+            <input type="checkbox" name="username" id="username" value="tomi">
+            <br>
+            <label for="username2">Tim</label>
+            <br>
+            <input type="radio" name="username2" id="username" valu="tim">
+            <br>
+            <label for="">Send</label>
+            <br>
+            <input type="submit" name="school" id="school" value="send">
+        </form>
+        <h3>Setting up html locally</h3>
+        <p>Always create an index.html file for website</p>
+
+        <!--Designing and styling tables-->
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td>Tim</td>
+                <td>19</td>
+            </tr>
+        </table>
+        <br>
+        <h1>Hi <b>Hey</b>
+        <p><b>What's up</b></p>
+        </h1>
+        <b>What's up</b>
+        <b>What's up</b>
+        <br>
+        <br>
+        <!--Drop down menu-->
+        <div class="dropdown">
+            <button class="dropdownbutton">
+                Dropdown Button
+            </button>
+            <div class="dropdown-menu">
+                <a href="#">List</a>
+                <a href="#">List</a>
+                <a href="#">List</a>
+                <a href="#">List</a>
+            </div>
+        </div>
+
+        <br>
+        <!--attribute selectors-->
+        <div class="test">
+            <p>Hi</p>
+            <br>
+            <br>
+        </div>
+    </body>
+</html>

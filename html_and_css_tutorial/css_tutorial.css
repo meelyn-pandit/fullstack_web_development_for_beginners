@@ -1,0 +1,198 @@
+html {
+    height: 100%;
+    width: 100%;
+    background-color: blanchedalmond;
+}
+
+body {
+    background-color: mediumslateblue;
+    /* background-image: url("https://play-lh.googleusercontent.com/MoaYYQjGtmGLhG9HbjCDKyj44kwHj1HfbCI2Am70elRm35vJ-u4y4X5uEJjP97MAAsU");
+    background-position: right top;  */
+    font-size: medium;
+    opacity: 0.9
+
+}
+/* this is a comment in css, use ctrl + / or /*
+
+/*selecting ids and classes, # for ids and . for classes*/
+#welcome {
+    background-color: red;
+}
+
+/*specifies h1 element with class name 'heading'*/
+h1.heading {
+    color: blue;
+}
+
+/* * will affect every single element */
+/* * {
+    color: purple;
+} */
+
+/* grouping selector */
+
+
+b {
+    margin-top: 60px;
+}
+
+/*margins*/
+p {
+    /* background-color:antiquewhite; */
+    /* margin-left: 50px; /* can also use percent as well
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px; */
+
+    /* another way to write margins top, right, bottom, left */
+    /* margin: 50px 50px 50px 50px; */
+
+    /*inherit the margin params from parent b element */
+    /* margin-top: inherit; */
+}
+
+/*borders, text-decoration, transformation*/
+h1, a {
+    /* can set the border of top, right, bottom, left separately */
+    /* border-style: dashed dotted dotted solid;
+    border-width: 6px;
+    border-color: purple blue green turquoise;
+    /* padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    height: 90px; */
+    max-width: 50%;
+    /* outline-style: solid; */ /*same as a border */
+    /* text-decoration-line: underline; */
+    /* text-decoration-line: underline overline; */
+    /* text-decoration-line:line-through; */
+    text-decoration-color: green;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 10px;
+    text-decoration: overline purple solid 6px; /* text decoration all in one line */
+    text-transform: capitalize;
+    /* text-indent: 30px;
+    letter-spacing: 30px;*/
+    /* font-family: Arial, Helvetica, sans-serif */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    /* font-size: 50px; */
+    font-size: 1em;
+}
+
+h2 {
+    border-top-style: dashed;
+    border-right-style: dotted;
+    border-bottom-style: dotted;
+    border-left-style: dashed;
+    border-width: thick;
+    padding: 40px 30px 20px 10px;
+}
+
+h3 {
+    /* border-style: solid; */
+    border-left: dotted;
+    border-width: 5px 5px 11px 2;
+}
+
+p {
+    /* border-style: inset;
+    border: 10px solid purple;
+    border-radius: 10px; */
+}
+
+b.text {
+    vertical-align: bottom;
+}
+
+/*Designing and styling tables */
+table, th, td {
+        /* display: none; */ /*none removes the table, while visibility keeps it hidden*/
+    /* visibility:hidden; */
+    border: 2px solid;
+    width: 50%;
+    border-collapse: collapse; /*everything is one line */
+}
+
+/* th {
+    height: 50px;
+}
+
+td {
+    text-align: right;
+} */
+
+th, td {
+
+    text-align: left;
+    padding: 10px;
+}
+
+tr:hover {
+    background-color: blue;
+}
+
+tr:before { 
+    background-color: red;
+}
+
+h1 > b{ /* > operator only looks for direct child bold elements */
+    color: red;
+}
+
+/* + selects every element after the h1 */
+h1 + b{ /* + selects every element after the h1 */
+    color: red;
+}
+
+h1 ~ b { /* tilda selects all children after*/
+    color: red;
+}
+
+/*Drop down menus */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdownbutton {
+    background-color: blue;
+    color: white;
+    padding: 13px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    /* display: ; */
+    display: none;
+    position: absolute;
+    background-color: lightblue;
+    min-width: 150px;
+}
+
+.dropdown-menu a {
+    color: black;
+    passing: 11px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdownbutton {
+    background-color: grey;
+}
+
+div[class="test"] {
+    color: red;
+}
