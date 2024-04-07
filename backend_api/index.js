@@ -1,11 +1,9 @@
 import app from './server.js'
 import mongodb from 'mongodb'
 import 'dotenv/config' // need to import dotenv to use .env file and protected passwords!
-// import ReviewsDAO from './dao/reviewsDAO.js'
+import ReviewsDAO from './dao/reviewsDAO.js'
 
 const MongoClient = mongodb.MongoClient
-// const mongo_username = process.env['MONGO_USERNAME']
-// const mongo_password = process.env['MONGO_PASSWORD']
 
 const mongo_username = process.env.MONGO_USERNAME
 const mongo_password = process.env.MONGO_PASSWORD
@@ -28,6 +26,7 @@ MongoClient.connect( // from mongodb library
         process.exit(1)
     })
     .then(async client => {
+        await ReviewsDAO.injectDB(client) // a way to send database connection to ReviewsDAO
         app.listen(port, () => {
             console.log(`listening on port ${port}`)
         }) //app.listen starts the server
