@@ -39,7 +39,6 @@
   }
   
   input {
-    all: unset;
     font: 15px system-ui;
     color: #fff;
     height: 100%;
